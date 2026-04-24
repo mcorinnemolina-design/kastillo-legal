@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transparent, accessible, and fairly priced legal-adjacent services. Explore our flat-fee pricing for notary services, business forms, and legal document preparation.">
+    <title>KASTILLO | Pricing & Expertise</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=3">
+    <style>
+        .pricing-header {
+            padding-top: 14rem;
+            padding-bottom: 2rem;
+            text-align: center;
+        }
+
+        .pricing-header h1 {
+            font-size: clamp(3rem, 6vw, 4.5rem);
+            font-weight: 300;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        .pull-quote {
+            font-size: clamp(1.15rem, 2vw, 1.5rem);
+            font-weight: 300;
+            line-height: 1.6;
+            color: var(--accent-bronze);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Solid Navbar Override for Text Visibility */
+        .navbar {
+            background-color: #121212;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .pricing-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 3rem;
+            transition: var(--transition);
+        }
+
+        .pricing-card:hover {
+            border-color: var(--accent-bronze);
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .pricing-card .desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+            padding: 1rem 0;
+            color: var(--text-secondary);
+        }
+
+        .price-row:last-of-type {
+            border-bottom: none;
+        }
+
+        .price-label {
+            font-weight: 300;
+            font-size: 0.95rem;
+        }
+
+        .price-value {
+            font-weight: 500;
+            color: var(--accent-bronze);
+        }
+
+        .price-disclaimer {
+            font-size: 0.8rem;
+            font-style: italic;
+            color: rgba(0, 0, 0, 0.5);
+            margin-top: 1.5rem;
+        }
+
+        .bundle-card {
+            background: linear-gradient(135deg, rgba(168, 129, 91, 0.05) 0%, rgba(168, 129, 91, 0.15) 100%);
+            border: 1px solid rgba(168, 129, 91, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar (Matches Home Page) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="logo"><img src="logo/logotransparent_fixed.png" alt="Kastillo Logo"
+                        class="logo-img"></a>
+                <span class="nav-tagline">Elite Paralegal Support</span>
+            </div>
+            <div class="nav-links">
+                <a href="about.html">About</a>
+                <a href="services.html">Expertise</a>
+                <a href="index.html#booking" class="btn-secondary">Book Consult</a>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <a href="about.html">About</a>
+        <a href="services.html">Expertise</a>
+        <a href="index.html#booking" class="btn-secondary">Book Consult</a>
+    </div>
+
+    <main>
+        <!-- Service Header -->
+        <section class="section-padding" style="padding-top: 6rem;">
+            <div class="section-container pricing-header">
+                <h1>Services & Fees</h1>
+                <p class="pull-quote">We believe legal-adjacent services should be transparent, accessible, and fairly
+                    priced. Our practice offers clear flat-fee pricing so clients know what to expect — with no hidden
+                    costs.</p>
+            </div>
+        </section>
+
+        <!-- Pricing Grid -->
+        <section class="section-padding" style="padding-top: 0;">
+            <div class="section-container">
+                <div class="pricing-grid">
+
+                    <!-- Notary -->
+                    <div class="pricing-card">
+                        <h3>Notary & Commissioner Services</h3>
+                        <p class="desc">Reliable and convenient public and commissioner services. Suitable for personal,
+                            business, immigration-related, and administrative needs.</p>
+
+                        <div class="price-row">
+                            <span class="price-label">Notarization (first document)</span>
+                            <span class="price-value">$45</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Each additional document</span>
+                            <span class="price-value">$15</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Affidavits & Stat Declarations</span>
+                            <span class="price-value">$45</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Certified True Copies (per doc)</span>
+                            <span class="price-value">$25</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Travel Consent Letters</span>
+                            <span class="price-value">$45</span>
+                        </div>
+                        <p class="price-disclaimer">Family, bulk, and same-appointment discounts may be available.</p>
+                    </div>
+
+                    <!-- Contracts & Demand Letters -->
+                    <div class="pricing-card">
+                        <h3>Legal Document Preparation</h3>
+                        <p class="desc">Demand letters, simple contracts, and agreements within the permitted scope of
+                            practice for Ontario paralegals.</p>
+
+                        <div class="price-row">
+                            <span class="price-label">Simple Demand Letter</span>
+                            <span class="price-value">$125</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Complex Demand Letter</span>
+                            <span class="price-value">$175 – $250</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Service/Contractor Agreement</span>
+                            <span class="price-value">$250</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Basic B2B Agreement</span>
+                            <span class="price-value">$350 – $500</span>
+                        </div>
+                    </div>
+
+                    <!-- Business Forms -->
+                    <div class="pricing-card">
+                        <h3>Business & Admin Forms</h3>
+                        <p class="desc">Clarity, accuracy, and accessibility — helping clients ensure documents are
+                            prepared correctly for their intended use.</p>
+
+                        <div class="price-row">
+                            <span class="price-label">Sole Proprietorship Registration</span>
+                            <span class="price-value">$125</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Basic Corporate Filing Assist.</span>
+                            <span class="price-value">$175 – $250</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Gov't Form Assistance</span>
+                            <span class="price-value">$100 – $300</span>
+                        </div>
+                    </div>
+
+                    <!-- Wills -->
+                    <div class="pricing-card">
+                        <h3>Wills & Powers of Attorney</h3>
+                        <p class="desc">Estate-planning services offered in collaboration with a licensed Ontario
+                            lawyer. (Advised exclusively by the lawyer).</p>
+
+                        <div class="price-row">
+                            <span class="price-label">Simple Will</span>
+                            <span class="price-value">From $350</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Power of Attorney (Property/Care)</span>
+                            <span class="price-value">From $250</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Will + POA Package</span>
+                            <span class="price-value">From $500</span>
+                        </div>
+                        <p class="price-disclaimer">Important: This practice does not provide independent
+                            estate-planning or testamentary legal services. Final fees set by the partnering lawyer.</p>
+                    </div>
+
+                    <!-- Consultations -->
+                    <div class="pricing-card">
+                        <h3>Strategic Consultations</h3>
+                        <p class="desc">Book an initial case review to explore paths forward. Fee is fully credited if
+                            you retain our services.</p>
+
+                        <div class="price-row">
+                            <span class="price-label">30-Minute Consultation</span>
+                            <span class="price-value">$60</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Credited to Retained Services</span>
+                            <span class="price-value">Yes</span>
+                        </div>
+                        <div style="margin-top: 2rem;">
+                            <a href="index.html#booking" class="btn-primary btn-outline-dark"
+                                style="display:block; text-align:center;">Book Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Bundles -->
+                    <div class="pricing-card bundle-card">
+                        <h3 style="color: var(--accent-bronze);">Exclusive Bundles</h3>
+                        <p class="desc">Popular structured packages tailored for families and new small businesses.</p>
+
+                        <div class="price-row" style="flex-direction: column; align-items: flex-start; gap: 0.5rem;">
+                            <span class="price-value">New Business Starter ($400 – $500)</span>
+                            <span class="price-label">Business reg., one basic contract, one notarization.</span>
+                        </div>
+                        <br>
+                        <div class="price-row"
+                            style="flex-direction: column; align-items: flex-start; gap: 0.5rem; border: none;">
+                            <span class="price-value">Family Notary Bundle ($150)</span>
+                            <span class="price-label">Two affidavits, two notarizations, certified copies.</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Fee & Engagement Policy Footer -->
+        <section class="section-padding">
+            <div class="section-container"
+                style="max-width: 800px; text-align: center; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 4rem;">
+                <h3 style="font-weight: 300; margin-bottom: 2rem;">Fee & Engagement Policy</h3>
+                <div
+                    style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; text-align: left; max-width: 650px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+                    <p><strong>Transparency:</strong> All fees are discussed in advance. Flat fees apply unless
+                        otherwise
+                        stated.</p>
+                    <p><strong>Scope of Practice:</strong> Services limited to matters authorized under Ontario
+                        paralegal
+                        regulations. We arrange lawyer-partnered services where necessary.</p>
+                    <p><strong>Advisory:</strong> Legal advice provided only where permitted. Estate-planning advice
+                        provided solely by a licensed Ontario lawyer.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Matches Home Page) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo"><img src="logo/logotransparent_fixed.png" alt="Kastillo Logo"
+                        style="height: 35px; width: auto; opacity: 0.7;"></div>
+            </div>
+            <div class="footer-legal">
+                <p>&copy; 2026 Kastillo Legal. Not acting as an attorney. No legal advice provided.</p>
+            </div>
+            <div class="footer-social">
+                <a href="services.html">Expertise</a>
+                <a href="about.html">About</a>
+                <a href="index.html#booking">Consultation</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js?v=2"></script>
+</body>
+
+</html>

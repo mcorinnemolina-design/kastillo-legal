@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Kathleen Castillo, a licensed paralegal and notary public in Ontario committed to making legal processes understandable, accessible, and respectful.">
+    <title>KASTILLO | About Kathleen Castillo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=3">
+    <style>
+        .about-header {
+            padding-top: 14rem;
+            padding-bottom: 0rem;
+            text-align: center;
+        }
+
+        .about-header h1 {
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 300;
+            margin-bottom: 3rem;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        .pull-quote {
+            font-size: clamp(1.25rem, 2vw, 1.75rem);
+            font-weight: 300;
+            line-height: 1.4;
+            color: var(--accent-bronze);
+            max-width: 900px;
+            margin: 0 auto;
+            font-style: auto;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            align-items: start;
+        }
+
+        @media (max-width: 968px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
+        .about-col-text h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+        }
+
+        .about-col-text p {
+            margin-bottom: 1.8rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.4;
+            font-weight: 300;
+        }
+
+        .about-image {
+            width: 80%;
+            max-width: 450px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 4px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .values-section {
+            background: #111111;
+            padding: 6rem 0;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .values-section .editorial-header h2 {
+            color: #ffffff;
+        }
+        
+        .values-section .editorial-header p {
+            color: #ffffff !important;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .value-card {
+            padding: 3rem 2.5rem;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        .value-card:hover {
+            border-color: var(--accent-bronze);
+            transform: translateY(-5px);
+        }
+
+        .value-card h3 {
+            margin-bottom: 1.25rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: var(--accent-bronze);
+        }
+
+        .value-card p {
+            font-size: 1rem;
+            color: #ffffff;
+            line-height: 1.4;
+        }
+
+        .regulatory-section {
+            margin-top: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .list-block {
+            margin-top: 2rem;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .list-block li {
+            margin-bottom: 1.25rem;
+            position: relative;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            padding-left: 2rem;
+        }
+
+        .list-block li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-bronze);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .closing-block {
+            text-align: center;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 4rem;
+            border: 1px solid var(--border-color);
+            background: var(--bg-card);
+            border-radius: 8px;
+        }
+        
+        .closing-block h3 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+        .closing-block p.main-p {
+            text-align: center;
+            color: var(--text-secondary);
+            line-height: 1.4;
+            margin-bottom: 1rem;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Solid Navbar Override for Text Visibility */
+        .navbar {
+            background-color: #121212;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar (Matches Home Page) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="logo"><img src="logo/logotransparent_fixed.png" alt="Kastillo Logo" class="logo-img"></a>
+                <span class="nav-tagline">Elite Paralegal Support</span>
+            </div>
+            <div class="nav-links">
+                <a href="about.html">About</a>
+                <a href="services.html">Expertise</a>
+                <a href="index.html#booking" class="btn-secondary">Book Consult</a>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <a href="about.html">About</a>
+        <a href="services.html">Expertise</a>
+        <a href="index.html#booking" class="btn-secondary">Book Consult</a>
+    </div>
+
+    <main>
+        <!-- Value Statement Hero -->
+        <section class="section-padding">
+            <div class="section-container about-header">
+                <p class="pull-quote">Accessible, ethical legal-adjacent services—delivered with clarity, care, and respect. This practice is grounded in a commitment to making legal processes more understandable and accessible without compromising professionalism or integrity.</p>
+            </div>
+        </section>
+
+        <!-- About The Practice -->
+        <section class="section-padding" style="padding-top: 0; padding-bottom: 0;">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-col-img">
+                        <!-- Temporary Headshot mapping from unsplash -->
+                        <img src="headshot.jpg" alt="Kathleen Castillo" class="about-image" style="filter: none;">
+                        
+                        <div class="regulatory-section" style="width: 80%; max-width: 450px; margin: 4rem auto 0 auto;">
+                            <h2 style="font-weight: 300; font-size: 1.8rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 2rem;">Licensing & Regulation</h2>
+                            <ul class="list-block" style="margin-top: 0;">
+                                <li>Licensed Paralegal, Law Society of Ontario (2024)</li>
+                                <li>Commissioner for Taking Affidavits / Notary Public, Ontario</li>
+                                <li>Regulated under the Law Society Act and Paralegal Rules of Conduct</li>
+                            </ul>
+                            <p style="margin-top: 1.5rem; color: var(--text-secondary); font-style: italic; font-size: 0.9rem; line-height: 1.5;">Note: Where a matter requires a lawyer — including wills and estate-planning services — clients are served through a lawyer-partnered model, with legal advice and drafting provided exclusively by a licensed Ontario lawyer.</p>
+                        </div>
+                    </div>
+                    <div class="about-col-text">
+                        <h2>About The Practice</h2>
+                        <p>Kathleen Castillo is a licensed paralegal and notary public, regulated by the Law Society of Ontario, with over a decade of experience working across courts, community legal clinics, and public-sector legal environments.</p>
+                        
+                        <p>Her professional background includes extensive experience supporting judicial processes and assisting judges through complex administrative and procedural work. This foundation gives her a strong understanding of how the legal system operates in practice and how thoughtful preparation, accuracy, and professionalism can make a meaningful difference for individuals navigating it.</p>
+                        
+                        <p>Kathleen’s practice is also deeply informed by her long-standing work in community legal clinics, where she supported lawyers and paralegals serving low-income and disenfranchised individuals. Through this work, she gained hands-on experience with tribunal processes, ODSP and Ontario Works matters, and client navigation through administrative systems. She brings a trauma-informed, anti-oppressive, and client-centred approach to every interaction.</p>
+                        
+                        <p>Guided by a commitment to access, clarity, and dignity, Kathleen provides legal-adjacent services that are affordable, transparent, and grounded in integrity. Her goal is to help clients move forward with confidence—supported by reliable guidance, respectful service, and a clear understanding of their options.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Bento (Dark) -->
+        <section class="values-section">
+            <div class="section-container">
+                <div class="editorial-header" style="text-align: center; margin-left: auto; margin-right: auto;">
+                    <h2 style="font-size: 2.5rem;">Professional Approach</h2>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;">My practice is informed by extensive frontline experience and guided by three core principles.</p>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <h3>Access</h3>
+                        <p>Legal support should be understandable, respectful, and within reach. I am committed to helping clients access the services they need — or appropriate referrals — without unnecessary barriers.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Clarity</h3>
+                        <p>Legal processes can feel confusing or intimidating. I prioritize clear communication, transparent pricing, and realistic expectations so clients can make informed decisions.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Fairness & Dignity</h3>
+                        <p>My work has long been rooted in community-based and public-interest legal settings. I bring a trauma-informed, anti-oppressive, and client-centered approach to every interaction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing Block -->
+        <section style="padding-top: 2rem; padding-bottom: 5rem;">
+            <div class="section-container">
+                <div class="closing-block">
+                    <h3>Community & Commitment</h3>
+                    <p class="main-p">Having spent much of my career working within court services and community legal clinics, I understand how profoundly legal systems can affect individuals and families — especially those facing vulnerability, transition, or uncertainty. This practice reflects a commitment to thoughtful, ethical service: helping clients move forward with confidence, knowing their matter is handled properly, professionally, and with care.</p>
+                    
+                    <div style="margin-top: 1.5rem; display: flex; flex-direction: column; align-items: center;">
+                        <p style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-bronze); margin-bottom: 0.5rem; max-width: 100%;">Unsure if we can help?</p>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; max-width: 100%; text-align: center;">We welcome inquiries and will provide honest guidance on next steps.</p>
+                        <a href="index.html#booking" class="btn-outline-dark btn-primary" style="display: inline-block;">Schedule Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Matches Home Page) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo"><img src="logo/logotransparent_fixed.png" alt="Kastillo Logo" style="height: 35px; width: auto; opacity: 0.7;"></div>
+            </div>
+            <div class="footer-legal">
+                <p>&copy; 2026 Kastillo Legal. Not acting as an attorney. No legal advice provided.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#services">Expertise</a>
+                <a href="about.html">About</a>
+                <a href="#booking">Consultation</a>
+                <a href="#intake">Intake Form</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js?v=2"></script>
+</body>
+</html>

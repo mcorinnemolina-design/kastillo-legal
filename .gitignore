@@ -1,0 +1,7 @@
+.DS_Store
+venv/
+__pycache__/
+*.zip
+server.log
+website copy/
+remove_bg.py
