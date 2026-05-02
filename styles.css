@@ -693,3 +693,18 @@ a {
     min-height: 150px;
     resize: vertical;
 }
+
+/* Specific CTA override for contact form button */
+.contact-form .btn-primary {
+    background-color: #111;
+    border-color: #111;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #A8815B; /* Accent Bronze */
+    border-color: #A8815B;
+    color: #fff;
+    transform: translateY(-2px);
+}
