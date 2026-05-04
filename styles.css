@@ -708,3 +708,28 @@ a {
     color: #fff;
     transform: translateY(-2px);
 }
+
+/* Footer Social Links */
+.footer-social {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-social a {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+    font-weight: 400;
+}
+
+.footer-social a:hover {
+    color: var(--accent-bronze);
+}
+
+@media (max-width: 1024px) {
+    .footer-social {
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+}
